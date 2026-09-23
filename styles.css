@@ -1,0 +1,121 @@
+style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #faf9f6;
+  color: #1c1917;
+}
+
+/* Header */
+.cabecera {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.cab-izq,
+.cab-der {
+  flex: 1;
+}
+
+.cab-cen {
+  flex: 2;
+  text-align: center;
+}
+
+.tit-marca {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ico-carr {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+/* Barra de Navegación */
+.nav-bar {
+  background: #fff;
+  border-bottom: 1px solid #e7e5e4;
+  padding: 0.8rem;
+}
+
+.enl-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.enl-nav a {
+  text-decoration: none;
+  color: #78716c;
+  font-size: 0.95rem;
+}
+
+.enl-nav a:hover,
+.enl-nav a.active {
+  color: #1c1917;
+  font-weight: bold;
+}
+
+/* Grilla de Productos */
+.cont-prin {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.tit-sec {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #78716c;
+  font-weight: 400;
+}
+
+.grilla-prod {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjeta */
+.tarj-prod {
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  padding: 1rem;
+  border-radius: 4px;
+
+}
+
+.tarj-prod:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.img-prod {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+.nom-prod {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.prec-prod {
+  font-size: 0.9rem;
+  color: #78716c;
+}
