@@ -11,7 +11,7 @@
 <body>
 
   <!-- HEADER -->
-  <header class="cabecera">
+  <header class="cabecera" id="inicio">
     <!-- Izquierda: Icono del Carrito de Compras -->
     <div class="cab-izq">
       <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" class="ico-carr" alt="Carrito">
@@ -31,7 +31,7 @@
     <ul class="enl-nav">
       <li><a href="#inicio" class="active">Inicio</a></li>
       <li><a href="#productos">Productos</a></li>
-      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#productos">Catálogo</a></li>
       <li><a href="#compras">Compras</a></li>
     </ul>
   </nav>
@@ -42,7 +42,7 @@
       <h2 class="tit-sec">Colección Destacada</h2>
 
       <!-- Grilla de Tarjetas -->
-      <div class="grilla-prod">
+      <div class="grilla-prod" id="productos-lista">
 
         <!-- Tarjeta 1 -->
         <article class="tarj-prod">
@@ -51,17 +51,19 @@
           </div>
           <h3 class="nom-prod">Chocolate Maraná</h3>
           <p class="prec-prod">S/23.00 </p>
-          <a href="product1.html"><button type="button">Comprar</button></a>
+          <a href="product1.html"><button type="button">Ver detalle</button></a>
+          <button class="btn-comprar" onclick="agregarAlCarrito(1)">Comprar</button>
         </article>
 
         <!-- Tarjeta 2 -->
         <article class="tarj-prod">
           <div class="cont-img">
-            <img src="https://wongfood.vtexassets.com/arquivos/ids/505630-800-auto?v=637752083607830000&width=800&height=auto&aspect=true" alt="Chocolate Cacaosuyo" class="img-prod">
+            <img src="https://wongfood.vtexassets.com/arquivos/ids/505630-800-auto?v=637752083607830000&width=800&height=auto&aspect=true" alt="Chocolate Ccaosuyo" class="img-prod">
           </div>
           <h3 class="nom-prod">Chocolate Cacaosuyo</h3>
           <p class="prec-prod">S/22.50 </p>
-          <button>Comprar<href=""></button>
+          <button>Ver detalle<href=""></button>
+          <button class="btn-comprar" onclick="agregarAlCarrito(2)">Comprar</button>
         </article>
 
         <!-- Tarjeta 3 -->
@@ -71,7 +73,8 @@
           </div>
           <h3 class="nom-prod">Chocolate La Ibérica</h3>
           <p class="prec-prod">S/31.00 </p>
-          <button>Comprar<href=""></button>
+          <button>Ver detalle<href=""></button>
+          <button class="btn-comprar" onclick="agregarAlCarrito(3)">Comprar</button>
         </article>
 
         <!-- Tarjeta 4 -->
@@ -81,7 +84,8 @@
           </div>
           <h3 class="nom-prod">Chocolate Bakáu</h3>
           <p class="prec-prod">S/18.00 </p>
-          <button>Comprar<href=""></button>
+          <button>Ver detalle<href=""></button>
+          <button class="btn-comprar" onclick="agregarAlCarrito(4)">Comprar</button>
         </article>
 
         <article class="tarj-prod">
@@ -90,7 +94,8 @@
           </div>
           <h3 class="nom-prod">Chocolate Pumatiy</h3>
           <p class="prec-prod">S/14.00 </p>
-          <button>Comprar<href=""></button>
+          <button>Ver detalle<href=""></button>
+          <button class="btn-comprar" onclick="agregarAlCarrito(5)">Comprar</button>
         </article>
 
         <article class="tarj-prod">
@@ -99,6 +104,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Kuyay</h3>
           <p class="prec-prod">S/22.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -108,6 +114,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Q´uma</h3>
           <p class="prec-prod">S/24.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -117,6 +124,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Amedei Toscana</h3>
           <p class="prec-prod">S/35.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -126,6 +134,7 @@
           </div>
           <h3 class="nom-prod">Chocolate La Maison du Chocolat</h3>
           <p class="prec-prod">S/70.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -135,6 +144,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Chocolate Domori</h3>
           <p class="prec-prod">S/40.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -144,6 +154,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Valrhona</h3>
           <p class="prec-prod">S/50.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -153,6 +164,7 @@
           </div>
           <h3 class="nom-prod">Chocolate To'ak</h3>
           <p class="prec-prod">S/65.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -162,6 +174,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Teuscher</h3>
           <p class="prec-prod">S/85.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -171,6 +184,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Ferrero Rocher</h3>
           <p class="prec-prod">S/20.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -180,6 +194,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Michel Cluizel</h3>
           <p class="prec-prod">S/90.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -189,6 +204,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Patchi</h3>
           <p class="prec-prod">S/69.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -198,6 +214,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Lotte Ghana</h3>
           <p class="prec-prod">S/40.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -207,6 +224,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Hershey</h3>
           <p class="prec-prod">S/35.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -216,6 +234,7 @@
           </div>
           <h3 class="nom-prod">Chocolate Pierre Marcolini</h3>
           <p class="prec-prod">S/75.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
 
@@ -225,15 +244,27 @@
           </div>
           <h3 class="nom-prod">Chocolate Bonnat</h3>
           <p class="prec-prod">S/55.00 </p>
+          <button>Ver detalle<href=""></button>
           <button>Comprar<href=""></button>
         </article>
-
-
-
       </div>
     </section>
   </main>
+  <main class="cont-prin">
+    <section class="sec-prod" id="compras">
+      <h2 class="tit-sec">Carrito de compras</h2>  
+      <div id="carrito-elementos">
+        <p class="carrito-vacio">El carrito está vacío</p>
+      </div>
+    
+    <!-- Barra de control inferior del carrito -->
+    <div class="carrito-pie">
+        <p>Total: S/. <span id="carrito-total">0.00</span></p>
+        <button id="btn-vaciar" class="btn-vaciar-estilo">Vaciar Carrito</button>
+    </div>
+</section>
 
+ <script src="script.js"></script>
 </body>
 
 </html>
